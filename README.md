@@ -42,13 +42,13 @@ Datasets - from keras.datasets import cifar10
 "model_imagenet=model_build()\n",  
 "model_imagenet.compile(loss='binary_crossentropy', optimizer=Adam(), metrics=['accuracy'])\n",  
 "model_imagenet.summary()"    
-This gives us the model summary containing 23,608,202 parameters with 23,555,082 as trainable parameters and rest as non trainable parameters.  
+This gives us the model summary containing 14,732,426 parameters with 14,732,362 as trainable parameters and rest as non trainable parameters.  
 ![Summary](Capture.PNG)
 # The Model Image
-![Model](dataset-cover.png)
+![Model](model_best.png)
 # Training Model
 "resnet_val_hist = model_resnet.fit(X_train, y_train, epochs = nepoch, batch_size=batch_size, callbacks = [lr_reduce, checkpoint, earlyStopping], validation_split = 0.1, verbose = 2)"  
-The batch size is 32  and the epochs are 100 with early stopping of  patience 10.  
+The batch size is 16  and the epochs are 50 with early stopping of  patience 10.  
 # Results
-The Training accuracy was 95.38.  
-The testing acuuracy was 93.12  
+The Training accuracy was 98.40.  
+The testing acuuracy was 96.10  
