@@ -1,7 +1,6 @@
 # Object_Classification_Deep_Residual_Seperable_CNN_with_base_model_VGG16
 Object Classification using Resnet50 Network on cifar10 datasets from keras.  
-The Network Used is Resnet50 as the base model.  
-The images were imported from keras.datsets containing about 50000 training imaages with 10000 testing images.  
+The Network Used is Resnet50 as the base model.  The images were imported from keras.datsets containing about 50000 training imaages with 10000 testing images.  
 The model was created with VGG16 as its base model and a Residual Seperable Convolutional layer following it.  
 The optimzer was Adam, 50 epochs with batch size of 16 and early stopping with patience of 10 and lr_reduce with factor of 0.1 and     patience of 2 were applied to the network.  
 The training set was split into validation set and tgraining set itself with a validation split = 0.1  
